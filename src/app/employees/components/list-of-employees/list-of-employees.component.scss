@@ -1,0 +1,25 @@
+table {
+  width: 100%;
+  margin: 20px 0;
+
+  .mat-row {
+    &:hover {
+      background-color: #e7e7e7;
+    }
+  }
+}
+
+.table-action {
+  text-decoration: underline;
+  color: #5782ee;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.employee-row {
+  &__avatar {
+    background-image: url('/assets/images/svg/employee-avatar.svg');
+    width: 2rem;
+    height: 2rem;
+  }
+}

@@ -1,0 +1,28 @@
+<div class="dialog-employee-settings">
+  <form [formGroup]="form" (ngSubmit)="submitForm()">
+    <ng-container formGroupName="name">
+      <mat-form-field>
+        <mat-label>First Name</mat-label>
+        <input type="text" formControlName="first" matInput>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Last Name</mat-label>
+        <input type="text" formControlName="last" matInput>
+      </mat-form-field>
+    </ng-container>
+    <mat-form-field>
+      <mat-label>Age</mat-label>
+      <input type="number" formControlName="age" matInput>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input type="text" formControlName="email" matInput>
+    </mat-form-field>
+
+    <button [disabled]="form.invalid" mat-raised-button type="submit">Save</button>
+  </form>
+</div>
+
+<div class="button-dialog-close" mat-dialog-close>
+  <mat-icon>close</mat-icon>
+</div>
